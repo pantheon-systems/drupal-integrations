@@ -18,7 +18,7 @@
  * This is a monotonically-increasing sequence number.
  */
 if (!defined("PANTHEON_VERSION")) {
-  define("PANTHEON_VERSION", "3");
+  define("PANTHEON_VERSION", "4");
 }
 
 /**
@@ -197,4 +197,16 @@ if (empty($settings['file_scan_ignore_directories'])) {
     'node_modules',
     'bower_components',
   ];
+}
+
+/**
+ * Drupal attempts to change the permissions of sites/default/settings.php
+ * and similar files for security purposes. This hardening is not necessary
+ * on Pantheon, and can result in problems with scaffolding.
+ *
+ * https://www.drupal.org/project/drupal/issues/3091285
+ *
+ */
+if (isset($_ENV['PANTHEON_ENVIRONMENT'])) {
+  $settings['skip_permissions_hardening'] = TRUE;
 }
