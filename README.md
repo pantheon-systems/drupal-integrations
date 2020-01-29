@@ -7,11 +7,11 @@ Add this project to any Drupal distribution based on drupal/core-composer-scaffo
 This project must be enabled in the top-level composer.json file, or it will be ignored and will not scaffold any files.
 ```
 {
-	  ...
-	  "require": {
-	  	  "pantheon-systems/pantheon-enabler"
-	  },
-	  ...
+    ...
+    "require": {
+        "pantheon-systems/pantheon-enabler"
+    },
+    ...
     "extra": {
         "drupal-scaffold": {
             "allowed-packages": [
@@ -27,7 +27,7 @@ This project must be enabled in the top-level composer.json file, or it will be 
 If including this project from a Composer-enabled upstream, you must disable settings.pantheon.yml from this project if that file is included as part of the upstream.
 ```
 {
-	  ...
+    ...
     "extra": {
         "drupal-scaffold": {
             "file-mapping": {
