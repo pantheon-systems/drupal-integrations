@@ -1,5 +1,5 @@
 {
-    "name": "pantheon-systems/pantheon-enabler",
+    "name": "pantheon-systems/drupal-integrations",
     "description": "Add this project to any Drupal distribution based on drupal/core-composer-scaffold to enable it for use on Pantheon.",
     "type": "project",
     "license": "MIT",
@@ -15,7 +15,7 @@
                 "[web-root]/sites/default/settings.pantheon.php": "assets/settings.pantheon.php",
                 "[web-root]/sites/default/settings.php": {
                     "mode": "replace",
-                    "path": "assets/initial.settings.pantheon.php",
+                    "path": "assets/initial.settings.php",
                     "overwrite": false
                 }
             }

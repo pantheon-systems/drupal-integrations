@@ -1,8 +1,8 @@
-# pantheon-systems/pantheon-enabler
+# pantheon-systems/drupal-integrations
 
 Add this project to any Drupal distribution based on drupal/core-composer-scaffold to enable it for use on Pantheon.
 
-This project enables the following Pantheon integrations:
+This project enables the following Pantheon/Drupal integrations:
 
 - Injects the Pantheon database credentials for the Drupal site
 - Provides a default PHP version to use (7.3)
@@ -26,13 +26,13 @@ This project must be enabled in the top-level composer.json file, or it will be 
 {
     ...
     "require": {
-        "pantheon-systems/pantheon-enabler"
+        "pantheon-systems/drupal-integrations"
     },
     ...
     "extra": {
         "drupal-scaffold": {
             "allowed-packages": [
-                "pantheon-systems/pantheon-enabler"
+                "pantheon-systems/drupal-integrations"
             ]
         }
     }
