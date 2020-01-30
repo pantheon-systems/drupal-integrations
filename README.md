@@ -41,7 +41,7 @@ This project must be enabled in the top-level composer.json file, or it will be 
 
 ## Special instructions for upstreams
 
-If including this project from a Composer-enabled upstream, you must disable settings.pantheon.yml from this project if that file is included as part of the upstream.
+If including this project from a Composer-enabled upstream, you must disable `pantheon.upstream.yml` from this project if that file is included as part of the upstream.
 ```
 {
     ...
