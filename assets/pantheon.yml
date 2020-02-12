@@ -1,0 +1,9 @@
+# Put your overrides to pantheon.upstream.yml in this file
+api_version: 1
+
+# If you wish to accept the recommended php version from your upstream
+# (if available), then remove the line below.
+php_version: 7.3
+
+# See https://pantheon.io/docs/pantheon-yml/#enforce-https--hsts for valid values.
+enforce_https: transitional
