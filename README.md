@@ -16,7 +16,7 @@ This project enables the following Pantheon/Drupal integrations:
 - Establishes a secure, random hash salt for Drupal
 - Injects the Pantheon Service Provider (clears edge cache on cache rebuild, etc.)
 - Prevents the user from updating Drupal core with Drush
-- Configures the trusted host patterns to avoid a warning that is not applicable to Panthoen
+- Configures the trusted host patterns to avoid a warning that is not applicable to Pantheon
 - Ignores large cache directories (e.g. node modules and bower components)
 
 ## Enabling this project
