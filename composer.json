@@ -4,7 +4,7 @@
     "type": "project",
     "license": "MIT",
     "conflict": {
-        "drupal/core": "<8.5"
+        "drupal/core": "<8.5 || >=9"
     },
     "extra": {
         "drupal-scaffold": {
@@ -17,6 +17,11 @@
                     "path": "assets/initial.settings.php",
                     "overwrite": false
                 }
+            }
+        },
+        "patches": {
+            "drupal/core": {
+                "Correct reporting of MariaDB version": "https://www.drupal.org/files/issues/2021-05-18/3213482-9.patch"
             }
         }
     }

@@ -26,7 +26,7 @@ This project must be enabled in the top-level composer.json file, or it will be 
 {
     ...
     "require": {
-        "pantheon-systems/drupal-integrations"
+        "pantheon-systems/drupal-integrations": "^8"
     },
     ...
     "extra": {
@@ -38,3 +38,7 @@ This project must be enabled in the top-level composer.json file, or it will be 
     }
 }
 ```
+
+## Versions
+
+Use version "^8" for Drupal 8, and version "^9" for Drupal 9.
