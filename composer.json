@@ -21,7 +21,7 @@
         },
         "patches": {
             "drupal/core": {
-                "Correct reporting of MariaDB version": "https://www.drupal.org/files/issues/2021-05-18/3213482-9.patch"
+                "Correct reporting of MariaDB version": "https://www.drupal.org/files/issues/2021-09-16/3213482-11.patch"
             }
         }
     }
