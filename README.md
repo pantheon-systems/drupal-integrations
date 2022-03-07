@@ -1,5 +1,7 @@
 # pantheon-systems/drupal-integrations
 
+[![Actively Maintained](https://img.shields.io/badge/Pantheon-Actively_Maintained-yellow?logo=pantheon&color=FFDC28)](https://pantheon.io/docs/oss-support-levels#actively-maintained)
+
 Add this project to any Drupal distribution based on drupal/core-composer-scaffold to enable it for use on Pantheon.
 
 This project enables the following Pantheon/Drupal integrations:
