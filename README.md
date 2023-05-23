@@ -7,8 +7,6 @@ Add this project to any Drupal distribution based on drupal/core-composer-scaffo
 This project enables the following Pantheon/Drupal integrations:
 
 - Injects the Pantheon database credentials for the Drupal site
-- Provides a default PHP version to use (7.3)
-- Enables HTTPS (in transitional mode) by default
 - Demonstrates how to turn on twig debugging on non-production Pantheon environments
 - Sets the path to:
   - Configuration import / export directory
