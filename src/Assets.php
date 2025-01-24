@@ -14,7 +14,7 @@ class Assets {
 	 * @return string
 	 * 	 The asset directory path.
 	 */
-	public function dir(): string {
+	public static function dir(): string {
 		return dirname(__DIR__) . '/assets';
 	}
 }
