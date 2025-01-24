@@ -4,7 +4,12 @@
     "type": "project",
     "license": "MIT",
     "conflict": {
-        "drupal/core": "<10"
+        "drupal/core": "<11"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pantheon\\Integrations\\": "src/",
+        }
     },
     "extra": {
         "drupal-scaffold": {
