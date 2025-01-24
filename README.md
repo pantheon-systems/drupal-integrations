@@ -91,4 +91,12 @@ include __DIR__ . "/settings.pantheon.php";
 
 Replace the `__DIR__` on that line with `\Pantheon\Integrations\Assets::dir()`, as shown in the section "Enabling this project", above. Once you do this, the `settings.pantheon.php` file will no longer be copied into your site's configuration folder, and will instead be included directly from its installed location in the `vendor` directory. This should also cause the errors from the Drupal Package Manager to go away.
 
+The above steps can be done automatically via Terminus. (Note: Requires the [Terminus Composer plugin]().)
 
+```
+$ terminus connection:set sftp
+$ terminus composer update
+$ terminus drush ev '\Pantheon\Integrations\Utils::stopScaffolding();'
+$ terminus composer update
+$ terminus env:commit --message "Stop scaffolding Pantheon's Drupal integrations, and include directly from vendor instead."
+```
