@@ -30,7 +30,6 @@ Then, Pantheon must be enabled from within your site's settings.php file:
 ```
 include \Pantheon\Integrations\Assets::dir() . "/settings.pantheon.php";
 ```
-This project must be enabled in the top-level composer.json file, or it will be ignored and will not perform any of its functions.
 
 ## Versions
 
