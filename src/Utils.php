@@ -13,7 +13,10 @@ class Utils {
 	 * 
 	 * Usage:
 	 * 
-	 * terminus drush ev '\Pantheon\Integrations\Utils::stopScaffolding();'
+	 *   terminus connection:set sftp
+	 *   terminus drush ev '\Pantheon\Integrations\Utils::stopScaffolding();'
+	 *   terminus composer update
+	 *   terminus env:commit --message "Stop scaffolding Pantheon's Drupal integrations, and include directly from vendor instead."
 	 * 
 	 * @return void
 	 */
