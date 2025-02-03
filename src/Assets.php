@@ -9,12 +9,12 @@ class Assets {
 	/**
 	 * dir
 	 * 
-	 * Return the path to the assets directory.
+	 * Return the path to the vendored assets directory.
 	 * 
 	 * @return string
 	 * 	 The asset directory path.
 	 */
 	public static function dir(): string {
-		return dirname(__DIR__) . '/assets';
+		return dirname(__DIR__) . '/vendored-assets';
 	}
 }
