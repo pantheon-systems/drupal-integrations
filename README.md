@@ -2,7 +2,7 @@
 
 [![Actively Maintained](https://img.shields.io/badge/Pantheon-Actively_Maintained-yellow?logo=pantheon&color=FFDC28)](https://pantheon.io/docs/oss-support-levels#actively-maintained-support)
 
-Add this project to any Composer-managed Drupal to enable it for use on Pantheon.
+Add this project to any Composer-managed Drupal site to enable it for use on Pantheon.
 
 This project enables the following Pantheon/Drupal integrations:
 
