@@ -22,7 +22,7 @@ This project enables the following Pantheon/Drupal integrations:
 To enable this project, it must first be added to the Drupal site:
 
 ```
-composer require pantheon-systems/drupal-integrations:^11.1
+composer require pantheon-systems/drupal-integrations:^10.1
 ```
 
 Then, Pantheon must be enabled from within your site's settings.php file:
