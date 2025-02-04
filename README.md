@@ -31,7 +31,7 @@ Then, Pantheon must be enabled from within your site's settings.php file:
 include \Pantheon\Integrations\Assets::dir() . "/settings.pantheon.php";
 ```
 
-See the [include-settings.php.tmpl](https://github.com/pantheon-systems/drupal-integrations/blob/11.x/vendored-assets/include-settings.php.tmpl) file for additional configuration you may wish to include in your settings.php file.
+See the [include-settings.php.tmpl](https://github.com/pantheon-systems/drupal-integrations/blob/10.x/vendored-assets/include-settings.php.tmpl) file for additional configuration you may wish to include in your settings.php file.
 
 ## Versions
 
@@ -90,7 +90,7 @@ Next, find the following line in your settings.php file:
 include __DIR__ . "/settings.pantheon.php";
 ```
 
-Replace that one line with the entire contents of the [include-settings.php.tmpl](https://github.com/pantheon-systems/drupal-integrations/blob/11.x/vendored-assets/include-settings.php.tmpl) file. Once you do this, the `settings.pantheon.php` file will no longer be copied into your site's configuration folder, and will instead be included directly from its installed location in the `vendor` directory. This should also cause the errors from the Drupal Package Manager to go away.
+Replace that one line with the entire contents of the [include-settings.php.tmpl](https://github.com/pantheon-systems/drupal-integrations/blob/10.x/vendored-assets/include-settings.php.tmpl) file. Once you do this, the `settings.pantheon.php` file will no longer be copied into your site's configuration folder, and will instead be included directly from its installed location in the `vendor` directory. This should also cause the errors from the Drupal Package Manager to go away.
 
 The above steps can be done automatically via Terminus. (Note: Requires the [Terminus Composer plugin](https://github.com/pantheon-systems/terminus-composer-plugin).)
 
