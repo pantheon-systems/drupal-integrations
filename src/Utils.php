@@ -43,7 +43,7 @@ class Utils {
 		$settings_contents = file_get_contents($settings_path);
 
 		$pantheon_settings_pattern = 'include __DIR__ . "/settings.pantheon.php";';
-		$include_from_vendor = 'include \Pantheon\Integrations\Assets::dir() . "/settings.pantheon.php";';
+		$include_from_vendor = file_get_contents(\Pantheon\Integrations\Assets::dir() . "/include-settings.php.tmpl");
 
 		$updated_contents = str_replace($pantheon_settings_pattern, $include_from_vendor, $settings_contents);
 		if ($updated_contents == $settings_contents) {
