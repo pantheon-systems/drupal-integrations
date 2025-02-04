@@ -4,7 +4,7 @@
     "type": "project",
     "license": "MIT",
     "conflict": {
-        "drupal/core": "<11"
+        "drupal/core": "<11 || >=12"
     },
     "autoload": {
         "psr-4": {

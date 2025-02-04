@@ -22,7 +22,7 @@ This project enables the following Pantheon/Drupal integrations:
 To enable this project, it must first be added to the Drupal site:
 
 ```
-composer require pantheon-systems/drupal-integrations:^11
+composer require pantheon-systems/drupal-integrations:^11.1
 ```
 
 Then, Pantheon must be enabled from within your site's settings.php file:
@@ -30,6 +30,8 @@ Then, Pantheon must be enabled from within your site's settings.php file:
 ```
 include \Pantheon\Integrations\Assets::dir() . "/settings.pantheon.php";
 ```
+
+See the [include-settings.php.tmpl](https://github.com/pantheon-systems/drupal-integrations/blob/11.x/vendored-assets/include-settings.php.tmpl) file for additional configuration you may wish to include in your settings.php file.
 
 ## Versions
 
@@ -62,7 +64,7 @@ Any packages other than the implicitly allowed packages are not allowed to scaff
 pantheon-systems/drupal-integrations
 ```
 
-To fix this problem, first update to the latest version of pantheon-systems/drupal-integrations via `composer update`. Then, find the following section in your top-level composer.json file:
+To fix this problem, first update to the latest version of pantheon-systems/drupal-integrations via `composer update`; be sure you are on version 11.1.0 or later for a Drupal 11 site, or 10.1.0 for a Drupal 10 site. Then, find the following section in your top-level composer.json file:
 
 ```
         "drupal-scaffold": {
@@ -88,9 +90,9 @@ Next, find the following line in your settings.php file:
 include __DIR__ . "/settings.pantheon.php";
 ```
 
-Replace the `__DIR__` on that line with `\Pantheon\Integrations\Assets::dir()`, as shown in the section "Enabling this project", above. Once you do this, the `settings.pantheon.php` file will no longer be copied into your site's configuration folder, and will instead be included directly from its installed location in the `vendor` directory. This should also cause the errors from the Drupal Package Manager to go away.
+Replace that one line with the entire contents of the [include-settings.php.tmpl](https://github.com/pantheon-systems/drupal-integrations/blob/11.x/vendored-assets/include-settings.php.tmpl) file. Once you do this, the `settings.pantheon.php` file will no longer be copied into your site's configuration folder, and will instead be included directly from its installed location in the `vendor` directory. This should also cause the errors from the Drupal Package Manager to go away.
 
-The above steps can be done automatically via Terminus. (Note: Requires the [Terminus Composer plugin]().)
+The above steps can be done automatically via Terminus. (Note: Requires the [Terminus Composer plugin](https://github.com/pantheon-systems/terminus-composer-plugin).)
 
 ```
 $ terminus connection:set sftp
