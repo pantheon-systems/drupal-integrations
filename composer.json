@@ -4,12 +4,16 @@
     "type": "project",
     "license": "MIT",
     "conflict": {
-        "drupal/core": "<10"
+        "drupal/core": "<10 || >=11"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pantheon\\Integrations\\": "src/"
+        }
     },
     "extra": {
         "drupal-scaffold": {
             "file-mapping": {
-                "[project-root]/.drush-lock-update": "assets/drush-lock-update",
                 "[web-root]/sites/default/default.services.pantheon.preproduction.yml": "assets/default.services.pantheon.preproduction.yml",
                 "[web-root]/sites/default/settings.pantheon.php": "assets/settings.pantheon.php",
                 "[web-root]/sites/default/settings.php": {
