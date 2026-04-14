@@ -1,0 +1,16 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: drupal-integrations
+  description: Critical repository for establishing compatibility between major Drupal versions and Pantheon
+  annotations:
+    github.com/project-slug: pantheon-systems/drupal-integrations
+  tags:
+    - drupal
+    - integration
+    - compatibility
+spec:
+  type: library
+  lifecycle: production
+  owner: site-experience
