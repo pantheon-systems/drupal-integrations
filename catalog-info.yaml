@@ -12,5 +12,5 @@ metadata:
     - compatibility
 spec:
   type: library
-  lifecycle: production
+  lifecycle: mature
   owner: site-experience
