@@ -25,7 +25,7 @@ class Utils {
 		$site_path = DRUPAL_ROOT . '/' . $kernel->getSitePath();
 		self::useSettingsFromVendor($site_path);
 
-		$composer_json_path = DRUPAL_ROOT . '/composer.json';
+		$composer_json_path = DRUPAL_ROOT .  '/../composer.json';
 		self::removePantheonScaffolding($composer_json_path);
 	}
 
