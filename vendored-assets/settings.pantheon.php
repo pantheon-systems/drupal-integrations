@@ -13,7 +13,7 @@
  * This is a monotonically-increasing sequence number.
  */
 if (!defined("PANTHEON_VERSION")) {
-  define("PANTHEON_VERSION", "5");
+  define("PANTHEON_VERSION", "6");
 }
 
 /**
