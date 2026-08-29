@@ -22,7 +22,7 @@ This project enables the following Pantheon/Drupal integrations:
 To enable this project, it must first be added to the Drupal site:
 
 ```
-composer require pantheon-systems/drupal-integrations:^11.1
+composer require pantheon-systems/drupal-integrations:^12@dev
 ```
 
 Then, Pantheon must be enabled from within your site's settings.php file:
@@ -39,6 +39,7 @@ Use the major version of this project that matches your Drupal version.
 
 | Drupal Version | drupal-integrations Version |
 | -------------- | --------------------------- |
+| 12.x           | ^12@dev                     |
 | 11.x           | ^11                         |
 | 10.x           | ^10                         |
 | 9.x            | ^9                          |
